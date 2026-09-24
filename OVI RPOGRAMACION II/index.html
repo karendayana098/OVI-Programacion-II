@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación II</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Programación II</h1>
+        <p>Objeto Virtual de Información</p>
+    </header>
+
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <div class="menu">
+
+            <a href="#">Lecturas ▾</a>
+
+            <div class="submenu">
+
+                <a href="#conceptos">Conceptos de POO</a>
+                <a href="#clases">Clases y objetos</a>
+                <a href="#encapsulacion">Encapsulación</a>
+                <a href="#herencia">Herencia</a>
+                <a href="#polimorfismo">Polimorfismo</a>
+
+            </div>
+
+        </div>
+
+        <a href="#multimedia">Multimedia</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#autores">Autores</a>
+
+    </nav>
+
+    <main>
+
+        <section class="bienvenida" id="inicio">
+
+            <h2>Programación II</h2>
+
+            <h3>Programación Orientada a Objetos</h3>
+
+            <p>
+                Bienvenidos al Objeto Virtual de Información (OVI)
+                de Programación II. En este espacio encontrarás
+                contenidos educativos relacionados con la
+                Programación Orientada a Objetos y su aplicación
+                mediante el lenguaje de programación Java.
+            </p>
+
+            <p>
+                El propósito de este OVI es presentar los conceptos
+                de una manera clara, organizada e interactiva,
+                facilitando el aprendizaje y la comprensión de los
+                principales elementos de la programación orientada
+                a objetos.
+            </p>
+
+        </section>
+
+        <section class="contenido">
+
+            <h2>Objetivo general</h2>
+
+            <p>
+                Comprender los fundamentos de la Programación
+                Orientada a Objetos mediante el estudio de sus
+                principales conceptos, características y relaciones,
+                con el propósito de aplicarlos en el desarrollo de
+                programas utilizando Java.
+            </p>
+
+        </section>
+
+        <section class="contenido">
+
+            <h2>Introducción</h2>
+
+            <p>
+                La Programación II permite profundizar en los
+                conocimientos necesarios para desarrollar programas
+                de manera estructurada y organizada. Uno de los
+                enfoques más utilizados en el desarrollo de software
+                es la Programación Orientada a Objetos (POO).
+            </p>
+
+            <p>
+                La POO permite representar elementos de un problema
+                mediante objetos que poseen características y
+                comportamientos. Para ello se utilizan conceptos como
+                clases, objetos, atributos y métodos.
+            </p>
+
+            <p>
+                Además, la Programación Orientada a Objetos incorpora
+                principios como la encapsulación, la herencia y el
+                polimorfismo, los cuales permiten crear programas
+                reutilizables, organizados y fáciles de mantener.
+            </p>
+
+            <p>
+                A lo largo de este OVI se estudiarán estos conceptos
+                utilizando ejemplos relacionados con Java, con el
+                objetivo de facilitar su comprensión y aplicación.
+            </p>
+
+        </section>
+
+        <section class="contenido" id="conceptos">
+
+            <h2>Conceptos principales</h2>
+
+            <div class="conceptos">
+
+                <article>
+                    <h3>Clases</h3>
+
+                    <p>
+                        Son estructuras que permiten definir las
+                        características y comportamientos que tendrán
+                        los objetos.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Objetos</h3>
+
+                    <p>
+                        Son instancias de una clase que poseen
+                        atributos y pueden realizar diferentes
+                        acciones mediante sus métodos.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Encapsulación</h3>
+
+                    <p>
+                        Permite proteger los datos internos de un
+                        objeto y controlar la forma en que estos
+                        pueden ser utilizados o modificados.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Herencia</h3>
+
+                    <p>
+                        Permite que una clase pueda adquirir
+                        características y comportamientos de otra
+                        clase.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Polimorfismo</h3>
+
+                    <p>
+                        Permite que objetos de diferentes clases
+                        puedan responder de distintas formas ante
+                        una misma operación.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="lectura" id="clases">
+
+            <span class="etiqueta">LECTURA 01</span>
+
+            <h2>Clases y objetos</h2>
+
+            <div class="linea"></div>
+
+            <p>
+                En la Programación Orientada a Objetos, las clases y
+                los objetos son elementos fundamentales. Una clase
+                funciona como un modelo que define las características
+                y comportamientos que tendrán sus objetos.
+            </p>
+
+            <h3>¿Qué es una clase?</h3>
+
+            <p>
+                Una clase es una estructura que permite definir
+                atributos y métodos. Los atributos representan las
+                características de los objetos, mientras que los
+                métodos representan las acciones que pueden realizar.
+            </p>
+
+            <h3>¿Qué es un objeto?</h3>
+
+            <p>
+                Un objeto es una instancia de una clase. Esto significa
+                que podemos crear diferentes objetos utilizando una
+                misma clase, pero cada objeto puede tener valores
+                diferentes.
+            </p>
+
+            <h3>Ejemplo en Java</h3>
+
+            <div class="codigo">
+
+<pre>
+class Persona {
+
+    String nombre;
+    int edad;
+
+    void saludar() {
+        System.out.println("Hola");
+    }
+}
+
+Persona persona1 = new Persona();
+
+persona1.nombre = "Karen";
+persona1.edad = 19;
+</pre>
+
+            </div>
+
+            <h3>Elementos principales</h3>
+
+            <ul>
+                <li><strong>Clase:</strong> modelo para crear objetos.</li>
+
+                <li><strong>Objeto:</strong> instancia de una clase.</li>
+
+                <li><strong>Atributos:</strong> características del objeto.</li>
+
+                <li><strong>Métodos:</strong> acciones que puede realizar.</li>
+            </ul>
+
+            <div class="referencia">
+
+                <strong>Referencia APA:</strong><br>
+
+                Sierra, K., & Bates, B. (2008).
+                <em>Head First Java</em> (2nd ed.).
+                O'Reilly Media.
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================= -->
+        <!-- LECTURA: ENCAPSULACIÓN -->
+        <!-- ================================= -->
+
+        <section class="lectura" id="encapsulacion">
+
+            <span class="etiqueta">LECTURA 02</span>
+
+            <h2>Encapsulación</h2>
+
+            <div class="linea"></div>
+
+            <p>
+                La encapsulación es uno de los principios fundamentales
+                de la Programación Orientada a Objetos. Consiste en
+                proteger los datos internos de un objeto y controlar
+                la manera en que estos pueden ser utilizados o modificados.
+            </p>
+
+            <h3>¿Qué es la encapsulación?</h3>
+
+            <p>
+                La encapsulación permite ocultar los detalles internos
+                de una clase y proporcionar métodos para acceder a los
+                datos de manera controlada. En Java se utilizan
+                modificadores de acceso como
+                <strong>private</strong>, <strong>public</strong>
+                y <strong>protected</strong>.
+            </p>
+
+            <h3>Ejemplo en Java</h3>
+
+            <div class="codigo">
+
+<pre>
+class Persona {
+
+    private String nombre;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+}
+</pre>
+
+            </div>
+
+            <h3>¿Por qué es importante?</h3>
+
+            <ul>
+
+                <li>Protege los datos de una clase.</li>
+
+                <li>Permite controlar el acceso a la información.</li>
+
+                <li>Facilita el mantenimiento del código.</li>
+
+                <li>Ayuda a organizar mejor los programas.</li>
+
+            </ul>
+
+            <div class="referencia">
+
+                <strong>Referencia APA:</strong><br>
+
+                Deitel, P., & Deitel, H. (2017).
+                <em>Java: How to Program</em> (11th ed.).
+                Pearson.
+
+            </div>
+
+        </section>
+
+
+        <section class="lectura" id="herencia">
+
+            <span class="etiqueta">LECTURA 03</span>
+
+            <h2>Herencia</h2>
+
+            <div class="linea"></div>
+
+            <p>
+                La herencia es un mecanismo de la Programación
+                Orientada a Objetos que permite que una clase pueda
+                adquirir características y comportamientos definidos
+                en otra clase.
+            </p>
+
+            <h3>¿Cómo funciona?</h3>
+
+            <p>
+                La clase que proporciona sus características se conoce
+                como superclase o clase padre, mientras que la clase
+                que las recibe se conoce como subclase o clase hija.
+                En Java, la herencia se implementa utilizando la
+                palabra reservada <strong>extends</strong>.
+            </p>
+
+            <h3>Ejemplo en Java</h3>
+
+            <div class="codigo">
+
+<pre>
+class Animal {
+
+    void comer() {
+        System.out.println("El animal está comiendo");
+    }
+}
+
+class Perro extends Animal {
+
+    void ladrar() {
+        System.out.println("El perro está ladrando");
+    }
+}
+</pre>
+
+            </div>
+
+            <h3>Ventajas de la herencia</h3>
+
+            <ul>
+
+                <li>Permite reutilizar código.</li>
+
+                <li>Reduce la repetición de instrucciones.</li>
+
+                <li>Facilita la organización de las clases.</li>
+
+                <li>Permite establecer relaciones entre clases.</li>
+
+            </ul>
+
+            <div class="referencia">
+
+                <strong>Referencia APA:</strong><br>
+
+                Schildt, H. (2018).
+                <em>Java: The Complete Reference</em> (11th ed.).
+                McGraw-Hill Education.
+
+            </div>
+
+        </section>
+
+
+        <section class="lectura" id="polimorfismo">
+
+            <span class="etiqueta">LECTURA 04</span>
+
+            <h2>Polimorfismo</h2>
+
+            <div class="linea"></div>
+
+            <p>
+                El polimorfismo es uno de los principios de la
+                Programación Orientada a Objetos. Permite que una
+                misma operación pueda producir diferentes
+                comportamientos dependiendo del objeto que la ejecute.
+            </p>
+
+            <h3>¿Cómo funciona?</h3>
+
+            <p>
+                El polimorfismo permite trabajar con diferentes
+                objetos utilizando una referencia común. Cada objeto
+                puede implementar el comportamiento de una manera
+                diferente.
+            </p>
+
+            <h3>Ejemplo en Java</h3>
+
+            <div class="codigo">
+
+<pre>
+class Animal {
+
+    void sonido() {
+        System.out.println("Sonido del animal");
+    }
+}
+
+class Perro extends Animal {
+
+    void sonido() {
+        System.out.println("El perro ladra");
+    }
+}
+
+class Gato extends Animal {
+
+    void sonido() {
+        System.out.println("El gato maúlla");
+    }
+}
+</pre>
+
+            </div>
+
+            <h3>Importancia</h3>
+
+            <ul>
+
+                <li>
+                    Permite utilizar una misma referencia para
+                    diferentes objetos.
+                </li>
+
+                <li>
+                    Facilita la reutilización del código.
+                </li>
+
+                <li>
+                    Permite desarrollar programas más flexibles.
+                </li>
+
+                <li>
+                    Facilita la implementación de diferentes
+                    comportamientos.
+                </li>
+
+            </ul>
+
+            <div class="referencia">
+
+                <strong>Referencia APA:</strong><br>
+
+                Deitel, P., & Deitel, H. (2017).
+                <em>Java: How to Program</em> (11th ed.).
+                Pearson.
+
+            </div>
+
+        </section>
+
+<section class="multimedia" id="multimedia">
+
+    <span class="etiqueta">RECURSOS MULTIMEDIA</span>
+
+    <h2>Multimedia</h2>
+
+    <div class="linea"></div>
+
+    <p class="intro-multimedia">
+        En esta sección encontrarás recursos audiovisuales
+        relacionados con la Programación Orientada a Objetos,
+        sus conceptos principales y su aplicación.
+    </p>
+
+
+    <div class="video">
+
+        <h3>Introducción a la Programación Orientada a Objetos</h3>
+
+        <div class="video-contenedor">
+
+            <iframe
+                src="https://www.youtube.com/embed/DlphYPc_HKk"
+                title="Introducción a la Programación Orientada a Objetos"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <p>
+            Video introductorio sobre los fundamentos de la
+            Programación Orientada a Objetos.
+        </p>
+
+    </div>
+
+
+    <div class="video">
+
+        <h3>Herencia y Polimorfismo</h3>
+
+        <div class="video-contenedor">
+
+            <iframe
+                src="https://www.youtube.com/embed/Xkcyy4JyCy"
+                title="Herencia y Polimorfismo"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <p>
+            Recurso audiovisual relacionado con conceptos de
+            herencia y polimorfismo en la Programación Orientada
+            a Objetos.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="actividades" id="actividades">
+
+    <span class="etiqueta">ACTIVIDADES INTERACTIVAS</span>
+
+    <h2>Actividades</h2>
+
+    <div class="linea"></div>
+
+    <p class="intro-actividades">
+        Pon a prueba tus conocimientos sobre los principales
+        conceptos de la Programación Orientada a Objetos.
+    </p>
+
+
+    <div class="actividad">
+
+        <h3>Actividad 1: Selección múltiple</h3>
+
+        <p>
+            ¿Cuál de los siguientes conceptos permite que una clase
+            adquiera características y comportamientos de otra clase?
+        </p>
+
+        <label>
+            <input type="radio" name="pregunta1" value="a">
+            Encapsulación
+        </label>
+
+        <label>
+            <input type="radio" name="pregunta1" value="b">
+            Herencia
+        </label>
+
+        <label>
+            <input type="radio" name="pregunta1" value="c">
+            Polimorfismo
+        </label>
+
+        <button onclick="respuesta1()">Comprobar respuesta</button>
+
+        <p id="resultado1" class="resultado"></p>
+
+    </div>
+
+
+    <div class="actividad">
+
+        <h3>Actividad 2: Verdadero o falso</h3>
+
+        <p>
+            La encapsulación permite proteger los datos internos
+            de una clase.
+        </p>
+
+        <button onclick="verdadero()">Verdadero</button>
+
+        <button onclick="falso()">Falso</button>
+
+        <p id="resultado2" class="resultado"></p>
+
+    </div>
+
+
+    <div class="actividad">
+
+        <h3>Actividad 3: Identifica el concepto</h3>
+
+        <p>
+            Un objeto es una instancia de una:
+        </p>
+
+        <select id="pregunta3">
+
+            <option value="">
+                Selecciona una respuesta
+            </option>
+
+            <option value="objeto">
+                Objeto
+            </option>
+
+            <option value="clase">
+                Clase
+            </option>
+
+            <option value="metodo">
+                Método
+            </option>
+
+        </select>
+
+        <button onclick="respuesta3()">
+            Comprobar respuesta
+        </button>
+
+        <p id="resultado3" class="resultado"></p>
+
+    </div>
+
+</section>
+
+<section class="autores" id="autores">
+
+    <span class="etiqueta">INFORMACIÓN DEL AUTOR</span>
+
+    <h2>Autores</h2>
+
+    <div class="linea"></div>
+
+    <div class="autor">
+
+        <div class="foto-autor">
+            <img src="imagenes/karen.jpg" alt="Fotografía de Karen Dayana Nieto Torres">
+        </div>
+
+        <div class="datos-autor">
+
+            <h3>Karen Dayana Nieto Torres</h3>
+
+            <p>
+                <strong>Programa:</strong>
+                Ingeniería de Sistemas
+            </p>
+
+            <p>
+                <strong>Asignatura:</strong>
+                Programación II
+            </p>
+
+            <p>
+                <strong>Correo:</strong>
+                karendayananietotorres@gmail.com
+            </p>
+
+            <p>
+                Este Objeto Virtual de Información fue elaborado
+                como recurso educativo para facilitar el estudio
+                de los fundamentos de la Programación Orientada
+                a Objetos y su aplicación mediante Java.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+    </main>
+
+    <footer>
+
+        <p>Ingeniería de Sistemas</p>
+
+        <p>Programación II</p>
+
+    </footer>
+
+
+</body>
+
+</html>
